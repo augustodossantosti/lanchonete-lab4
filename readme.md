@@ -1,3 +1,15 @@
+Requisitos:
+
+PHP 7
+
+Instalação de dependências:
+
+php composer.phar install
+
+Execução:
+
+php artisan serve --host=localhost
+
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
 <p align="center">
