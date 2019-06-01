@@ -10,6 +10,16 @@ Execução:
 
 php artisan serve --host=localhost
 
+Slide para criação das migration e banco de dados:
+
+Slide 4:
+
+http://fatecsjc-prd.azurewebsites.net/moodle/pluginfile.php/88809/mod_resource/content/1/LabIV%20-%20Aula%2004%20-%202019.pdf
+
+Slide 6:
+
+http://fatecsjc-prd.azurewebsites.net/moodle/pluginfile.php/89471/mod_resource/content/1/LabIV%20-%20Aula%2006%20-%202019.pdf
+
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
 <p align="center">
