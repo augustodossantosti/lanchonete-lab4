@@ -1,6 +1,18 @@
 Requisitos:
 
     Xammp (PHP, MYSQL): https://www.apachefriends.org/pt_br/index.html
+    
+Iniciar xammp:
+
+    linux:
+    sudo /opt/lampp/manager-linux-x64.run
+    
+    windows:
+    Iniciar via atalho criado na instalação
+
+Configurar usuario e senha para phpmyadmin e banco de dados mysql
+
+    sudo /opt/lampp/lampp security
 
 Após a instalação  necessário dicionar as ferramentas do xamp no path para uso do php e mysql via terminal
 
