@@ -20,7 +20,7 @@ Geração da key para o projeto (no diretorio do projeto):
     $ mv .env.example .env & php artisan key:generate
     
     windows:
-    $ rename .env.example .env & php artisan key:generate
+    $ ren .env.example .env && php artisan key:generate
 
 Execução (no diretorio do projeto):
 
