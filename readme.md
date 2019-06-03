@@ -2,7 +2,7 @@
 
 Requisitos:
 
-    Xammp (PHP, MYSQL): https://www.apachefriends.org/pt_br/index.html
+    Xampp (PHP, MYSQL): https://www.apachefriends.org/pt_br/index.html
     
 Iniciar xammp:
 
