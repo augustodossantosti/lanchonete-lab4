@@ -8,7 +8,6 @@ $ cd ~ & gedit .bashrc
 
 colar o comando abaixo no fim do arquivo:
 
-# Xammp tools
 export PATH=$PATH:/opt/lampp/bin
 
 Instalação de dependências:
