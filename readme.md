@@ -1,22 +1,26 @@
 Requisitos:
 
-Xammp (PHP, MYSQL): https://www.apachefriends.org/pt_br/index.html
+    Xammp (PHP, MYSQL): https://www.apachefriends.org/pt_br/index.html
 
-Após a instalação  necessário dicionar as ferramentas do xamp no path para uso do php via terminal
+Após a instalação  necessário dicionar as ferramentas do xamp no path para uso do php e mysql via terminal
 
-$ cd ~ & echo "export PATH=$PATH:/opt/lampp/bin" >> .bashrc
+    linux:
+    $ cd ~ & echo "export PATH=$PATH:/opt/lampp/bin" >> .bashrc
+
+    windows (adicionar no Path em Variaveis do Sistema):
+    ;C:\xampp\mysql\bin;C:\xampp\php;
 
 Instalação de dependências (no diretorio do projeto):
 
-$ php composer.phar install
+    $ php composer.phar install
 
 Geração da key para o projeto (no diretorio do projeto):
 
-$ mv .env.example .env & php artisan key:generate
+    $ mv .env.example .env & php artisan key:generate
 
 Execução (no diretorio do projeto):
 
-php artisan serve --host=localhost
+    $ php artisan serve --host=localhost
 
 Slide para criação das migration e banco de dados:
 
