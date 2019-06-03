@@ -21,6 +21,10 @@ Após a instalação  necessário dicionar as ferramentas do xamp no path para u
 
     windows (adicionar no Path em Variaveis do Sistema):
     ;C:\xampp\mysql\bin;C:\xampp\php;
+    
+Dashboard do Xampp e acesso ao Phpmyadmin
+
+    http://localhost/
 
 Instalação de dependências (no diretorio do projeto):
 
