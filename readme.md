@@ -14,7 +14,11 @@ Iniciar xammp:
 
 Configurar usuario e senha para phpmyadmin e banco de dados mysql
 
+    linux:
     sudo /opt/lampp/lampp security
+    
+    windows:
+    Via phpMyAdmin
 
 Após a instalação  necessário dicionar as ferramentas do xamp no path para uso do php e mysql via terminal
 
