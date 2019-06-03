@@ -4,17 +4,17 @@ Xammp (PHP, MYSQL): https://www.apachefriends.org/pt_br/index.html
 
 Após a instalação  necessário dicionar as ferramentas do xamp no path para uso do php via terminal
 
-$ cd ~ & gedit .bashrc
+$ cd ~ & echo "export PATH=$PATH:/opt/lampp/bin" >> .bashrc
 
-colar o comando abaixo no fim do arquivo:
+Instalação de dependências (no diretorio do projeto):
 
-export PATH=$PATH:/opt/lampp/bin
+$ php composer.phar install
 
-Instalação de dependências:
+Geração da key para o projeto (no diretorio do projeto):
 
-php composer.phar install
+$ mv .env.example .env & php artisan key:generate
 
-Execução:
+Execução (no diretorio do projeto):
 
 php artisan serve --host=localhost
 
