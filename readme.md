@@ -4,8 +4,7 @@ Xammp (PHP, MYSQL): https://www.apachefriends.org/pt_br/index.html
 
 Após a instalação  necessário dicionar as ferramentas do xamp no path para uso do php via terminal
 
-$ cd ~
-$ gedit .bashrc
+$ cd ~ & gedit .bashrc
 
 colar o comando abaixo no fim do arquivo:
 
