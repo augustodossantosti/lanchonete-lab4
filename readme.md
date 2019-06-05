@@ -6,26 +6,41 @@ Requisitos:
     
 Iniciar xammp:
 
-    linux:
+    **linux:**
     sudo /opt/lampp/manager-linux-x64.run
     
-    windows:
-    Iniciar via atalho criado na instalação
+    **windows:**
+    ~\xampp\xampp_start.exe    
+      e iniciar o serviço do MySQL
+    ~\xampp\xampp_control.exe 
 
 Configurar usuario e senha para phpmyadmin e banco de dados mysql
 
-    linux:
+    **linux:**
     sudo /opt/lampp/lampp security
     
-    windows:
-    Via phpMyAdmin
+    **windows:**
+    Acessar o PHPMyAdmin com as credenciais fornecidas no arquivo ~\xampp\passwords.txt
+    
+        http://localhost/phpmyadmin
+    
+    Na aba *Contas de Usuário* selecionar *Add User Account*
+    
+    Preencher Informações de login 
+        User name: fatec
+        Host name: localhost
+        Palavra-passe: fatec
+        Confirma: fatec
+    Marcar todos os Privilégios Globais
+    Clicar em *Executar* no canto inferior direito da página
 
 Após a instalação  necessário dicionar as ferramentas do xamp no path para uso do php e mysql via terminal
 
-    linux:
+    **linux:**
     $ cd ~ & echo "export PATH=$PATH:/opt/lampp/bin" >> .bashrc
 
-    windows (adicionar no Path em Variaveis do Sistema):
+    **windows**
+    Adicionar no Path em Variaveis do Sistema:
     ;C:\xampp\mysql\bin;C:\xampp\php;
     
 Dashboard do Xampp e acesso ao Phpmyadmin
@@ -48,39 +63,24 @@ Execução (no diretorio do projeto):
 
     $ php artisan serve --host=localhost
 
-**Configuração do banco MySQL**
+Criar database do projeto:
 
-Acessar o PHPMyAdmin com as credenciais fornecidas no arquivo ~\xampp\passwords.txt
+    Fazer login no PHPMyAdmin com o usuário "fatec"
+    
+    Na aba *Base de Dados* (abaixo de *Criar base de dados*) inserir o nome "db_lanchonete" e clicar no botão "Criar"
 
-http://localhost/phpmyadmin
+Criar branch individual:
 
-Na aba Contas de Usuário selecionar "Add User Account"
-Preencher Informações de login 
-    User name: fatec
-    Host name: localhost
-    Palavra-passe: fatec
-    Confirma: fatec
-    Marcar todos os Privilégios Globais
+    $ git checkout -b <nome da branch> develop
 
-Selecionar o botão "Executar" no canto inferior direito da página
+Criar migrations:
 
-Fazer login no PHPMyAdmin com o usuário "fatec" recém criado
+    $ php artisan migrate:install
 
-Na aba Base de Dados, abaixo de Criar base de dados, inserir o nome "db_lanchonete" e clicar no botão "Criar"
 
-**Criar migrations**
+    $ php artisan migrate    
 
-Realize merge da branch *create_migrations* com sua branch
-
-    git merge create_migrations
-
-Os arquivos da pasta ~/database e o arquivo .env estão atualizados com as tabelas e a conexão a ser configurada
-
-Executar as migrations:
-
-    php artisan migrate:install
-
-    php artisan migrate    
+    
 
 Material de apoio: 
 
