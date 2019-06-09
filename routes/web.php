@@ -15,6 +15,8 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/ingredientes', function () {
-    return view('ingredientes');
-});
+Route::resource('ingredientes', 'IngredienteController');
+
+// Route::get('/ingredientes', function () {
+//     return view('ingredientes');
+// });
