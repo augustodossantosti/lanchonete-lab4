@@ -30,7 +30,7 @@
 
         <div class="panel-heading clearfix">
             <div class="btn-group">
-                <a class="btn btn-success btn-sm" href='{{ route("ingredientes.create") }}'>
+                <a class="btn btn-primary btn-sm" href='{{ route("ingredientes.create") }}'>
                     <i class="fa fa-plus"></i> Inserir um novo ingrediente
                 </a>
             </div>

@@ -97,6 +97,24 @@ class IngredienteController extends Controller
     public function update(Request $request, $id)
     {
         //
+        $rules = [
+            'nome' => 'required|string',
+        ];
+
+        $messages = [
+            'nome' => 'Informe o nome do ingrediente',
+        ];
+
+        $request->validate($rules, $messages);
+
+        $ingrediente = \App\Models\Ingrediente::findOrFail($id);
+        $ingrediente->nome = $request->nome;
+        $ingrediente->save();
+
+        return redirect()
+            ->route('ingredientes.index')
+            ->with('message', 'Registro atualizado com sucesso!')
+            ->with('type', 'success');
     }
 
     /**
