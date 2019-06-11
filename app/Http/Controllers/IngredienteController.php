@@ -82,6 +82,9 @@ class IngredienteController extends Controller
     public function edit($id)
     {
         //
+        $ingrediente = \App\Models\Ingrediente::findOrFail($id);
+
+        return view('ingredientes.edit',[ 'ingrediente' => $ingrediente ]);
     }
 
     /**
@@ -105,5 +108,25 @@ class IngredienteController extends Controller
     public function destroy($id)
     {
         //
+        $ingrediente = \App\Models\Ingrediente::findOrFail($id);
+
+        try {
+            // Exclui o registro da tabela
+            $ingrediente->delete();
+            $message = 'Registro excluído com sucesso';
+            $type = 'success';
+        } catch (\Throwable $th) {
+            // Se der algum erro na exclusão ...
+            $message = 'O registro não pode ser excluído.';
+            // Se o erro foi por violação da restrição da chave estrangeira ...
+            if (strpos($th->errorInfo[2], 'Cannot delete or update a parent row') !== false) {
+                $message .= 'Este registro está sendo utilizado em outros registros.';
+            }
+            $type = 'danger';
+        }
+        // Retorna para view index com uma flash message
+        return redirect()->back()
+            ->with('message', $message)
+            ->with('type', $type);
     }
 }
