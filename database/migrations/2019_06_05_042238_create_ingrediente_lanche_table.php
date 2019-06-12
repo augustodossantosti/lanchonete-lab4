@@ -14,14 +14,14 @@ class CreateIngredienteLancheTable extends Migration
     public function up()
     {
         Schema::create('ingrediente_lanche', function (Blueprint $table) {
-            $table->increments('id');            
-            $table->integer('id_lanche')->unsigned();
-            $table->integer('id_ingrediente')->unsigned();
-            $table->integer('quantidade');            
+            $table->increments('id');
+            $table->integer('lanche_id')->unsigned();
+            $table->integer('ingrediente_id')->unsigned();
+            $table->integer('quantidade');
 
 
-            $table->foreign('id_lanche')->references('id')->on('lanche')->onDelete('cascade');
-            $table->foreign('id_ingrediente')->references('id')->on('ingrediente')->onDelete('cascade');
+            $table->foreign('lanche_id')->references('id')->on('lanche')->onDelete('cascade');
+            $table->foreign('ingrediente_id')->references('id')->on('ingrediente')->onDelete('cascade');
         });
     }
 

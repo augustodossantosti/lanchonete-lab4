@@ -16,7 +16,5 @@ Route::get('/', function () {
 });
 
 Route::resource('ingredientes', 'IngredienteController');
-
-// Route::get('/ingredientes', function () {
-//     return view('ingredientes');
-// });
+Route::resource('lanches', 'LancheController');
+Route::resource('clientes', 'ClienteController');
