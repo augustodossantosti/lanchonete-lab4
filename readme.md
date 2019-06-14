@@ -94,3 +94,9 @@ http://fatecsjc-prd.azurewebsites.net/moodle/pluginfile.php/88809/mod_resource/c
 Slide 6:
 
 http://fatecsjc-prd.azurewebsites.net/moodle/pluginfile.php/89471/mod_resource/content/1/LabIV%20-%20Aula%2006%20-%202019.pdf
+
+Inclusão ADMIN LTE
+https://hdtuto.com/article/laravel-56-adminlte-bootstrap-theme-installation-example
+
+rodar o comando:
+    $ php composer.phar require jeroennoten/laravel-adminlte
