@@ -25,11 +25,11 @@
         <div class="panel panel-default">
             <div class="panel-body">
 
-                <div class="form-group">
+            <div class="form-group">
                     <label for="cpf">CPF</label>
-
-                    <input type="text" class="form-control" disabled id="cpf" name="cpf" placeholder="CPF"
-                    value="{{ old('cpf', $cliente->cpf) }}">
+                    
+<input type="hidden" name="cpf" id="cpf" value="{{  $cliente->cpf }}">
+<input type="text" class="form-control" disabled id="cpf_old" name="cpf_old" placeholder="CPF" value="{{ old('cpf', $cliente->cpf) }}">
 
                     @if($errors->has('cpf'))
                         <span class='invalid-feedback text-red'>
