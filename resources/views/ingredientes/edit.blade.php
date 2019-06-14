@@ -29,12 +29,6 @@
                     <input type="text" class="form-control" disabled id="id" name="id" placeholder="Id do ingrediente"
                     value="{{ $ingrediente->id }}">
 
-                    @if($errors->has('nome'))
-                        <span class='invalid-feedback text-red'>
-                            {{ $errors->first('nome') }}
-                        </span>
-                    @endif
-
                 <div>
 
                 <div class="form-group">
@@ -53,12 +47,9 @@
 
                 <div>
 
-               
-
             </div>
 
-            
-        </div>       
+        </div>
         <div class="form-group">
             <a class="btn btn-default" href="{{ route('ingredientes.index') }}">
                 <i class="fa fa-chevron-circle-left"></i> Voltar
@@ -66,7 +57,7 @@
 
             <button type="submit" class="btn btn-success"><i class="fa fa-save"></i> Salvar</button>
         </div>
-       
+
     </form>
 
 @stop

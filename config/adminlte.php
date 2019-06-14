@@ -85,7 +85,7 @@ return [
     |
     */
 
-    'dashboard_url' => 'home',
+    'dashboard_url' => '',
 
     'logout_url' => 'logout',
 
@@ -120,7 +120,8 @@ return [
         ],
         [
             'text' => 'Lanches',
-            'url'  => '/lanches'
+            'url'  => '/lanches',
+            'icon' => 'coffee'
         ],
         [
             'text' => 'Ingredientes',
