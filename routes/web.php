@@ -12,9 +12,10 @@
 */
 
 Route::get('/', function () {
-    return view('home');
+    return Redirect::to( '/pedidos');
 });
 
 Route::resource('ingredientes', 'IngredienteController');
 Route::resource('lanches', 'LancheController');
 Route::resource('clientes', 'ClienteController');
+Route::resource('pedidos', 'PedidoController');

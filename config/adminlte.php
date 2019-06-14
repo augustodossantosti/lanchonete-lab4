@@ -116,7 +116,8 @@ return [
         ],
         [
             'text' => 'Pedidos',
-            'url'  => '/pedidos'
+            'url'  => '/pedidos',
+            'icon' => 'money'
         ],
         [
             'text' => 'Lanches',
@@ -125,7 +126,8 @@ return [
         ],
         [
             'text' => 'Ingredientes',
-            'url'  => '/ingredientes'
+            'url'  => '/ingredientes',
+            'icon' => 'spoon'
         ],
         // // 'ACCOUNT SETTINGS',
         // // [

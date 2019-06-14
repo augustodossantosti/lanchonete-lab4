@@ -13,16 +13,16 @@ class CreateItemPedidoTable extends Migration
      */
     public function up()
     {
-        Schema::create('item_pedido', function (Blueprint $table) {
+        Schema::create('lanche_pedido', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('id_pedido')->unsigned();
-            $table->integer('id_lanche')->unsigned();
+            $table->integer('pedido_id')->unsigned();
+            $table->integer('lanche_id')->unsigned();
             $table->integer('quantidade');
-            $table->float('sutotal', 8,2);
+            $table->float('subtotal', 8,2);
 
 
-            $table->foreign('id_pedido')->references('id')->on('pedido')->onDelete('cascade');
-            $table->foreign('id_lanche')->references('id')->on('lanche')->onDelete('cascade');
+            $table->foreign('pedido_id')->references('id')->on('pedido')->onDelete('cascade');
+            $table->foreign('lanche_id')->references('id')->on('lanche')->onDelete('cascade');
         });
     }
 
@@ -33,6 +33,6 @@ class CreateItemPedidoTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('item_pedido');
+        Schema::dropIfExists('lanche_pedido');
     }
 }
