@@ -11,9 +11,9 @@ Entre as funcionalidades do sistema estão o cadastro de clientes, realização 
 
 Integrantes:
 
-Francilei Augusto dos Santos
-Ariene
-Maiara
+Francilei Augusto dos Santos  
+Ariene Maiara Ribeiro  
+Maiara Ferreira  
 
 Requisitos:
 
