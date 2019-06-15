@@ -1,8 +1,25 @@
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
+Disciplina: Laboratório de Desenvolvimento de Software IV
+Instituição: FATEC de São José dos Campos
+Curso: Banco de Dados
+
+Descrição:
+
+Lanchonete que permite o gerenciamento de vendas online. 
+Entre as funcionalidades do sistema estão o cadastro de clientes, realização de pedidos e gerenciamento dos alimentos oferecidos na plataforma.
+
+Integrantes:
+
+Francilei Augusto dos Santos
+Ariene
+Maiara
+
 Requisitos:
 
-    Xampp (PHP, MYSQL): https://www.apachefriends.org/pt_br/index.html
+    PHP 7 e MySQL 15
+    ou Xampp (PHP, MYSQL): https://www.apachefriends.org/pt_br/index.html
+    Composer
     
 Iniciar xammp:
 
@@ -12,17 +29,31 @@ Iniciar xammp:
     **windows:**
     ~\xampp\xampp_start.exe    
       e iniciar o serviço do MySQL
-    ~\xampp\xampp_control.exe 
+    ~\xampp\xampp_control.exe
 
+Após a instalação  necessário dicionar as ferramentas do xamp no path para uso do php e mysql via terminal
+
+    **linux:**
+    $ cd ~ & echo "export PATH=$PATH:/opt/lampp/bin" >> .bashrc
+
+    **windows**
+    Adicionar no Path em Variaveis do Sistema:
+    ;C:\xampp\mysql\bin;C:\xampp\php;
+    
 Configurar usuario e senha para phpmyadmin e banco de dados mysql
 
     **linux:**
     sudo /opt/lampp/lampp security
     
+Criar usuario para acesso ao banco de dados
+
+    http://localhost/phpmyadmin
+    
     **windows:**
     Acessar o PHPMyAdmin com as credenciais fornecidas no arquivo ~\xampp\passwords.txt
     
-        http://localhost/phpmyadmin
+    **linux:**
+    Acessar o PHPMyAdmin com as credenciais definidas para o usuario root nos passos anteriores
     
     Na aba *Contas de Usuário* selecionar *Add User Account*
     
@@ -34,20 +65,8 @@ Configurar usuario e senha para phpmyadmin e banco de dados mysql
     Marcar todos os Privilégios Globais
     Clicar em *Executar* no canto inferior direito da página
 
-Após a instalação  necessário dicionar as ferramentas do xamp no path para uso do php e mysql via terminal
 
-    **linux:**
-    $ cd ~ & echo "export PATH=$PATH:/opt/lampp/bin" >> .bashrc
-
-    **windows**
-    Adicionar no Path em Variaveis do Sistema:
-    ;C:\xampp\mysql\bin;C:\xampp\php;
-    
-Dashboard do Xampp e acesso ao Phpmyadmin
-
-    http://localhost/
-
-Instalação de dependências (no diretorio do projeto):
+Instalação de dependências do projeto (no diretorio do projeto):
 
     $ php composer.phar install
 
@@ -76,8 +95,6 @@ Criar branch individual:
 Criar migrations:
 
     $ php artisan migrate:install
-
-
     $ php artisan migrate    
 
     
