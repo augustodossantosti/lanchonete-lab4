@@ -37,21 +37,19 @@ class PedidoController extends Controller
     public function store(Request $request)
     {
         $rules = [
-            'nome' => 'required|string',
             'valor_total' => 'required|numeric',
         ];
 
         $messages = [
-            'nome' => 'Informe o nome do pedido',
             'valor_total' => 'Informe o valor do pedido'
         ];
 
         $request->validate($rules, $messages);
 
         $pedido = new \App\Pedido();
-        $pedido->nome = $request->nome;
+        $pedido->cpf = $request->cpf;
         $pedido->valor_total = $request->valor_total;
-        $pedido->data = date();
+        $pedido->data = date("Y-m-d H:i:s");
         $pedido->save();
 
         // Retorna para view index com uma flash message
