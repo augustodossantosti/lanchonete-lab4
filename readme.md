@@ -1,8 +1,8 @@
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
-Disciplina: Laboratório de Desenvolvimento de Software IV
-Instituição: FATEC de São José dos Campos
-Curso: Banco de Dados
+Disciplina: Laboratório de Desenvolvimento de Software IV  
+Instituição: FATEC de São José dos Campos  
+Curso: Banco de Dados  
 
 Descrição:
 
@@ -13,7 +13,7 @@ Integrantes:
 
 Francilei Augusto dos Santos  
 Ariene Maiara Ribeiro  
-Maiara Ferreira  
+Mayara Ferreira  
 
 Requisitos:
 
